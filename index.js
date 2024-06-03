@@ -82,3 +82,38 @@ let codeWord5 = "?!";
 let resultWord = codeWord1[1] + codeWord2[1] + codeWord3[1] + codeWord4[1] + codeWord5[1]
 
 console.log(resultWord)
+
+//Task 6
+
+let height = 15
+let width = 20
+
+height > width ? console.log(height) : console.log(width)
+
+
+//Task 7
+
+//Написать перебор от 1 до 20, где выведутся все числа кратные трём.
+
+for (let i = 1; i < 20; i++) {
+	i % 3 == 0 ? console.log(i) : null
+}
+
+//Task 8
+
+//Нам надо идти на работу, но нужно проверить все ли мы взяли или нет?
+//Нам точно нужны ключи документы и ручка, но из еды нам надо яблоко или апельсин.
+//Для решения этой задачи нам помогут логические операторы || &&.
+let key = true
+let documents = true
+let pen = true
+let apple = false
+let orange = true
+
+let shouldGoToWork
+
+if (key == true && documents == true && apple == true || orange == true) {
+	shouldGoToWork = 'yes'
+} else shouldGoToWork = 'no'
+
+console.log(shouldGoToWork)
