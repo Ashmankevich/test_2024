@@ -117,3 +117,75 @@ if (key == true && documents == true && apple == true || orange == true) {
 } else shouldGoToWork = 'no'
 
 console.log(shouldGoToWork)
+
+//Task 9
+
+//Запросить у пользователя число:
+//1. Если число делится без остатка на 5 выводим сообщение Fiz
+//2. Если число делится без остатка на 3 выводим сообшение Buz
+//3. Если число делится без остатка и на 3 и на 5 выводим сообшение FizBuz
+
+
+let askWord = +prompt('Please, enter the number', ['number'])
+
+let message = askWord % 5 == 0 && askWord % 3 == 0 ? 'FizBuz' :
+	askWord % 5 == 0 ? 'Fiz' :
+		askWord % 3 == 0 ? 'Buz' :
+			null
+
+
+alert(message)
+
+//Task 10
+
+let askAge = +prompt('Please, enter your age', ['age'])
+
+let messageTask10 = askAge > 18 ? 'Man, drink alco' :
+	askAge > 16 && askAge < 18 ? 'You can weed but be carefull' :
+		askAge < 18 ? 'Man, you should drink cola' : null
+
+alert(messageTask10)
+
+//Task 11
+
+let askDirection = prompt('Man, tell me, what direction you will choose', ['south, north, west, east'])
+
+let messageTask11
+
+switch (askDirection) {
+	case 'south':
+		messageTask11 = 'If you go to South you will be happy person'
+		break;
+	case 'north':
+		messageTask11 = 'If you go to North you will be rich person'
+		break;
+	case 'west':
+		messageTask11 = 'If you go to West you will find best friend'
+		break;
+	case 'east':
+		messageTask11 = 'If you go to East you will be FrontEnd developer'
+		break;
+	default:
+		messageTask11 = 'Oops'
+		break;
+}
+
+alert(messageTask11)
+
+//Task 12
+
+/*
+Написать программу, которая будет выводить в консоль лесенку.
+#
+##
+###
+####
+#####
+######
+*/
+
+/*for (let i = 0; i < 6; i++) {
+	for (let j = 0; j < i; j++) {
+		console.log('#')
+	}
+}*/
