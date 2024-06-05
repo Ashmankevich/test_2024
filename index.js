@@ -184,8 +184,72 @@ alert(messageTask11)
 ######
 */
 
-/*for (let i = 0; i < 6; i++) {
+for (let i = 0; i < 6; i++) {
+	let x = '#'
 	for (let j = 0; j < i; j++) {
-		console.log('#')
+		x += '#'
 	}
-}*/
+	console.log(x)
+}
+
+//Task 13
+/*
+Перепишите код с использованием одной конструкции switch:
+
+const number = +prompt('Введите число между 0 и 3', '');
+
+if (number === 0) {
+  alert('Вы ввели число 0');
+}
+
+if (number === 1) {
+  alert('Вы ввели число 1');
+}
+
+if (number === 2 || number === 3) {
+  alert('Вы ввели число 2, а может и 3');
+}
+*/
+
+const number = +prompt('Введите число между 0 и 3', '')
+
+switch (number) {
+	case 0:
+		alert('Вы ввели число 0')
+		break
+	case 1:
+		alert('Вы ввели число 1')
+		break
+	case 2:
+	case 3:
+		alert('Вы ввели число 2, а может и 3')
+		break
+	default: null
+		break
+}
+
+//Task 14
+/*
+С помощью двух вложенных циклов выведите на экран следующую строку (или столбец):
+111222333444555666777888999
+*/
+
+for (let i = 0; i < 10; i++) {
+	for (let j = 0; j < 3; j++) {
+		console.log(i)
+	}
+}
+
+//Task 15
+/*
+Use two nested loops to display the following string or column:
+11 12 13 21 22 23 31 32 33
+*/
+
+//Task 16
+
+/*
+С помощью вложенных циклов, нарисуйте строку:
+
+***_***_***_
+*/
