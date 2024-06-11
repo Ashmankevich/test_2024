@@ -253,3 +253,18 @@ Use two nested loops to display the following string or column:
 
 ***_***_***_
 */
+
+let result16 = ''
+let t2 = '_'
+
+for (let i = 0; i < 3; i++) {
+
+	let t1 = '*'
+	for (let j = 0; j < 2; j++) {
+		t1 += '*'
+	}
+
+	result16 += t1 + t2
+
+}
+console.log(result16)
