@@ -246,6 +246,17 @@ Use two nested loops to display the following string or column:
 11 12 13 21 22 23 31 32 33
 */
 
+let result15 = ''
+let space = ' '
+
+for (let i = 10; i < 40; i += 10) {
+	for (let j = 1; j < 4; j++) {
+		result15 += i + j + space
+	}
+}
+
+console.log(result15)
+
 //Task 16
 
 /*
