@@ -279,3 +279,33 @@ for (let i = 0; i < 3; i++) {
 
 }
 console.log(result16)
+
+//Task 17
+
+function checkAge(age) {
+	if (age > 18) {
+		return true;
+	} else {
+		return confirm('Родители разрешили?');
+	}
+}
+checkAge(20)
+
+function checkAge2(age) {
+	return (age > 18) ? true : confirm('Родители разрешили')
+}
+checkAge2(5)
+
+//Task 18
+
+function min(a, b) {
+	return a > b ? b : a
+}
+min(2, 5)
+
+//Task 19
+
+function pow(x, n) {
+return x**n
+}
+pow(3, 2)
