@@ -321,6 +321,8 @@ function getSum(x) {
 }
 getSum(100)
 
+//Task 21
+
 function getloan(money) {
 
 	const year = 5
@@ -331,11 +333,15 @@ function getloan(money) {
 }
 getloan(51000)
 
+//Task 22
+
 function trimString(word, start, end) {
 	return word.slice(start, end)
 
 }
 trimString('Ashmankevich', 2, 4)
+
+//Task 23
 
 function getSumNumbers(number) {
 	let result = 0
