@@ -306,6 +306,44 @@ min(2, 5)
 //Task 19
 
 function pow(x, n) {
-return x**n
+	return x ** n
 }
 pow(3, 2)
+
+//Task 20
+
+function getSum(x) {
+	let result = 0
+	for (let i = 0; i <= x; i++) {
+		result += i
+	}
+	return result
+}
+getSum(100)
+
+function getloan(money) {
+
+	const year = 5
+	const condition = 0.17
+
+	return money * condition * year + money
+
+}
+getloan(51000)
+
+function trimString(word, start, end) {
+	return word.slice(start, end)
+
+}
+trimString('Ashmankevich', 2, 4)
+
+function getSumNumbers(number) {
+	let result = 0
+	let numberToWord = String(number)
+	for (let i = 0; i < numberToWord.length; i++) {
+		let transformToNumber = Number(numberToWord[i])
+		result += transformToNumber
+	}
+	return result
+}
+getSumNumbers(2021)
