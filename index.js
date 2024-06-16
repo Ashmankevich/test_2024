@@ -353,3 +353,84 @@ function getSumNumbers(number) {
 	return result
 }
 getSumNumbers(2021)
+
+//Task 24
+
+function getSum24(a, b) {
+	if (a === b) {
+		return a
+	} else if (a < b) {
+		let sum = 0
+		for (a; a <= b; a++) {
+			sum += a
+		}
+		return sum
+
+	} else if (a > b) {
+		let sum = 0
+		for (b; b <= a; b++) {
+			sum += b
+		}
+		return sum
+	}
+
+}
+getSum24(-1, 2)
+
+//Task 25
+
+function fooboo(logic, f1, f2) {
+	logic ? f1() : f2();
+}
+fooboo(false, function () { console.log('foo') }, function () { console.log('boo') })
+
+//Task 26
+
+function triangle(a, b, c) {
+	if (a === b && b === c && c === a) {
+		return true
+	} else if (a < b + c && b < a + c && c < a + b) {
+		return true
+	} else return false
+}
+triangle(5, 5, 5)
+
+//Task 27
+
+let chocolate = (m, n) => {
+	if (m != 1 && n != 1) {
+		return m - 1 + (n - 1);
+	} else return 0;
+};
+chocolate(1, 1);
+
+//Task 28
+
+function buyIphone() {
+
+	let askToBuy = confirm('Do you want to buy an Iphone?')
+	if (askToBuy == false) {
+		alert('Ok, see you later')
+	} else {
+		let askToMoney = prompt('Please, enter your budget', 5000)
+		const iphoneAndTax = 1100
+		if (askToMoney >= iphoneAndTax) {
+			alert('Ok, you can buy some Iphone')
+			alert('Iphone cost 1000$ and % tax, so 1100$')
+			let ask = confirm('Are you buying?')
+			let result = 0
+			if (!ask == false) {
+				let limit = askToMoney / iphoneAndTax
+				for (let i = 0; i < limit; i++) {
+					askToMoney -= iphoneAndTax
+					result=i*iphoneAndTax
+				}
+
+			}
+			return result
+
+		} else alert('sorry, you have not enough money')
+	}
+	return null
+}
+buyIphone()
