@@ -423,7 +423,7 @@ function buyIphone() {
 				let limit = askToMoney / iphoneAndTax
 				for (let i = 0; i < limit; i++) {
 					askToMoney -= iphoneAndTax
-					result=i*iphoneAndTax
+					result = i * iphoneAndTax
 				}
 
 			}
@@ -434,3 +434,55 @@ function buyIphone() {
 	return null
 }
 buyIphone()
+
+//Task 29
+
+let user = {}
+user.name = 'John'
+user.surname = 'Smith'
+user.name = 'Pete'
+delete user.name
+
+//Task 30
+
+let obj = {}
+
+function isEmpty(obj) {
+	let key
+	for (let prop in obj) {
+		key = prop
+	}
+	return key ? false : true
+}
+
+isEmpty(obj)
+
+//Task 31
+
+let salaries = {
+	John: 100,
+	Ann: 160,
+	Pete: 130
+}
+
+function getSum(obj) {
+
+	let isEmpty
+
+	for (let prop in obj) {
+		isEmpty = prop
+	}
+
+	if (isEmpty === undefined) {
+		return 0
+	} else {
+		let sum30 = 0
+		for (let key in salaries) {
+			sum30 += salaries[key]
+		}
+
+		return sum30
+	}
+
+}
+getSum(salaries)
