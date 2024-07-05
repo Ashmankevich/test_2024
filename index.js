@@ -486,3 +486,80 @@ function getSum(obj) {
 
 }
 getSum(salaries)
+
+//Task 32
+
+let user = {
+	name: Andrew,
+	age: 31
+}
+
+delete user.name
+delete user.age
+
+//Task 33
+
+let user = {
+	name: 'Andrew',
+	age: 31
+}
+
+"name" in user ? console.log(true) : console.log(false)
+
+//Task 34
+
+const student = {
+	name: 'John',
+	age: 19,
+	isHappy: true
+}
+
+for (prop in student) {
+	console.log(prop)
+}
+for (prop in student) {
+	console.log(student[prop])
+}
+
+//Task 35
+
+const colors = {
+	'ru pum pu ru rum': {
+		red: 'красный',
+		green: 'зеленый',
+		blue: 'синий'
+	},
+};
+
+console.log(colors['ru pum pu ru rum'].red)
+console.log(colors['ru pum pu ru rum'].blue)
+
+
+//Task 36
+
+let salaries36 = {
+	andrey: 500,
+	sveta: 413,
+	anton: 987,
+	andrey: 664,
+	alexandra: 199
+}
+
+function salariesEmployers(obj) {
+
+	let sum = 0
+
+	for (let prop in salaries36) {
+		sum += salaries36[prop]
+	}
+
+	let employers = 0
+
+	for (let key in salaries36) {
+		salaries36.hasOwnProperty(key) ? employers++ : null
+	}
+
+	return sum / employers
+
+}
+salariesEmployers(salaries36)
