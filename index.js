@@ -585,3 +585,43 @@ let calculator = {
 calculator.read();
 alert(calculator.sum());
 alert(calculator.mul());
+
+//Task 38
+
+function Calculator() {
+	this.read = function () {
+		let a = +prompt('Please, enter the number a', 0)
+		let b = +prompt('Please, enter the number b', 0)
+
+		this.a = a
+		this.b = b
+	}
+	this.sum = function () {
+		return this.a + this.b
+	}
+	this.mul = function () {
+		return this.a * this.b
+	}
+}
+
+let calculator38 = new Calculator();
+calculator38.read();
+
+alert("Sum=" + calculator38.sum());
+alert("Mul=" + calculator38.mul());
+
+//Task 39
+
+function Accumulator(startingValue) {
+	this.value = startingValue
+	this.read = function () {
+		let a = +prompt('Please, enter the number a', 0)
+		this.value = a + this.value
+	}
+
+}
+
+let accumulator = new Accumulator(1);
+accumulator.read();
+accumulator.read();
+console.log(accumulator.value);
